@@ -6,7 +6,7 @@
     "keywords": ["Next.js", "buttercms", "cms", "blog"],
     "buildpacks": [
         {
-          "url": "heroku/nodejs"
+            "url": "heroku/nodejs"
         }
     ],
     "env": {
