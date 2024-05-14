@@ -47,3 +47,4 @@ Vercel, the creators of Next.js, or to Heroku. With the click of a button, you'l
 ## 5) Previewing
 
 Your starter project is automatically configured to show draft changes saved in your Butter account when run locally or deployed to a hosting provider. To disable this behavior, set the following value in your .env file: PREVIEW=false.
+# butterCMS
