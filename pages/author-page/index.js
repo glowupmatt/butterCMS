@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import AuthorCard from "@/components/author-page/author-card";
-import { getAuthorCollection, getAuthorPage } from "@/lib/api";
+import { getAuthorCollection } from "@/lib/api";
 import Preloader from "@/components/preloader";
 import camelcaseKeys from "camelcase-keys";
 import ErrorPage from "next/error";
@@ -37,6 +37,7 @@ export async function getStaticProps() {
       props: {
         collection: camelcaseKeys(collection),
       },
+      revalidate: 1,
     };
   } catch (e) {
     console.error(`Couldn't load content for Landing page.`, e);
